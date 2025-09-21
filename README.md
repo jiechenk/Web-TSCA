@@ -1,2 +1,2 @@
 # Web-TSCA
-contoh Website Tropis Sulawesi Cinta Alam 
+Contoh Website Tropis Sulawesi Cinta Alam 
