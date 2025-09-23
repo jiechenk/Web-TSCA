@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropis Sulawesi Cinta Alam - Galeri (Halaman 3)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container">
+      <h1>TROPIS SULAWESI CINTA ALAM</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="anggota.html">Anggota</a></li>
+          <li><a href="kegiatan.html">Kegiatan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Konten Halaman -->
+  <main class="container">
+    
+    <!-- Header Section -->
+    <section class="attributes-section animate-fade-in-up">
+      <h2 class="section-title">Galeri Foto - Halaman 3</h2>
+      <p class="text-center" style="color: #6b7280; font-size: 1.125rem; max-width: 42rem; margin: 0 auto 3rem;">
+        Dokumentasi kegiatan dan ekspedisi Tropis Sulawesi Cinta Alam
+      </p>
+      
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <a href="images/foto1.jpg" target="_blank">
+            <img src="images/foto1_thumb.jpg" alt="Eksplorasi Gua Karst">
+            <div class="gallery-caption">
+              <p>Eksplorasi Gua Karst</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/foto2.jpg" target="_blank">
+            <img src="images/foto2_thumb.jpg" alt="Rescue Training">
+            <div class="gallery-caption">
+              <p>Rescue Training</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/foto3.jpg" target="_blank">
+            <img src="images/foto3_thumb.jpg" alt="Camping & Survival">
+            <div class="gallery-caption">
+              <p>Camping & Survival</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item">
+          <a href="images/foto1.jpg" target="_blank">
+            <img src="images/foto1_thumb.jpg" alt="Dokumentasi Flora Fauna">
+            <div class="gallery-caption">
+              <p>Dokumentasi Flora Fauna</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/foto2.jpg" target="_blank">
+            <img src="images/foto2_thumb.jpg" alt="Kegiatan Sosial">
+            <div class="gallery-caption">
+              <p>Kegiatan Sosial</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/foto3.jpg" target="_blank">
+            <img src="images/foto3_thumb.jpg" alt="Ceremony & Award">
+            <div class="gallery-caption">
+              <p>Ceremony & Award</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination">
+        <a href="galeri2.html">Sebelumnya</a>
+        <a href="galeri.html">1</a>
+        <a href="galeri2.html">2</a>
+        <button>3</button>
+        <span class="disabled">Selanjutnya</span>
+      </nav>
+      
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section animate-fade-in-up">
+      <div class="cta-content">
+        <h3>Ingin Foto Anda Tampil di Galeri Kami?</h3>
+        <p>Bergabunglah dalam kegiatan kami dan jadilah bagian dari dokumentasi perjalanan konservasi alam Sulawesi. Setiap langkah kecil Anda berkontribusi untuk masa depan yang lebih hijau.</p>
+        <a href="kegiatan.html" class="cta-button">Lihat Kegiatan Terbaru</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tropis Sulawesi Cinta Alam. Semua hak dilindungi.</p>
+      <p style="margin-top: 0.5rem; opacity: 0.8; font-size: 0.75rem;">
+        "Care Environment For Live Survival" - Peduli Lingkungan untuk Kelangsungan Hidup
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" style="
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(21, 128, 61, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  " onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑
+  </button>
+
+  <script>
+    // Show/hide scroll to top button
+    window.addEventListener('scroll', function() {
+      const scrollButton = document.getElementById('scrollToTop');
+      if (window.pageYOffset > 300) {
+        scrollButton.style.display = 'flex';
+      } else {
+        scrollButton.style.display = 'none';
+      }
+    });
+
+    // Add stagger animation to gallery items
+    document.addEventListener('DOMContentLoaded', function() {
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      galleryItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.1}s`;
+        item.classList.add('animate-fade-in-up');
+      });
+    });
+  </script>
+
+</body>
+</html>
